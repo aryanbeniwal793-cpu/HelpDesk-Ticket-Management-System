@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Help Desk Dashboard</h2>
+<hr />
+
+<div class="row text-center mt-4">
+    <div class="col-md-4">
+        <div class="card bg-primary text-white p-3 mb-3">
+            <h3>Total Tickets</h3>
+            <h2>@ViewBag.TotalTickets</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-warning text-dark p-3 mb-3">
+            <h3>Open Tickets</h3>
+            <h2>@ViewBag.OpenTickets</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white p-3 mb-3">
+            <h3>Closed Tickets</h3>
+            <h2>@ViewBag.ClosedTickets</h2>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-action="List" class="btn btn-outline-primary">View All Tickets</a>
+    <a asp-action="Create" class="btn btn-success">Raise New Ticket</a>
+    <a asp-action="Filter" class="btn btn-outline-secondary">Filter by Status</a>
+</div>

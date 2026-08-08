@@ -1,0 +1,44 @@
+@model HelpDesk.Mvc.Models.Ticket
+
+<h2>Edit Ticket</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="CreatedDate" />
+            
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label"></label>
+                <input asp-for="Title" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Priority" class="form-label"></label>
+                <select asp-for="Priority" class="form-select" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Status" class="form-label"></label>
+                <select asp-for="Status" class="form-select" required>
+                    <option value="Open">Open</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Closed">Closed</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="RaisedBy" class="form-label"></label>
+                <input asp-for="RaisedBy" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            <a asp-action="List" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

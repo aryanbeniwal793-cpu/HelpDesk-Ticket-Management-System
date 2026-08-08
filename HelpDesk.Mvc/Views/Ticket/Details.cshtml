@@ -1,0 +1,17 @@
+@model HelpDesk.Mvc.Models.Ticket
+
+<h2>Ticket Details</h2>
+<hr />
+
+<div class="card col-md-8">
+    <div class="card-body">
+        <h4 class="card-title">#@Model.Id - @Model.Title</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Raised by: @Model.RaisedBy on @Model.CreatedDate.ToShortDateString()</h6>
+        <p class="card-text mt-3"><strong>Description:</strong><br />@Model.Description</p>
+        <p><strong>Priority:</strong> @Model.Priority</p>
+        <p><strong>Status:</strong> <span class="badge bg-info text-dark">@Model.Status</span></p>
+        
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="List" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

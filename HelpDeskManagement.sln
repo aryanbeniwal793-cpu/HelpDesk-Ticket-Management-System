@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Api", "HelpDesk.Api\HelpDesk.Api.csproj", "{2418BE13-29E0-4D1F-AC12-20C5C0D2B79A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Mvc", "HelpDesk.Mvc\HelpDesk.Mvc.csproj", "{C132CDA8-154B-4CF6-BFB0-132E7EA2D8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Tests", "HelpDesk.Tests\HelpDesk.Tests.csproj", "{0F7C517E-020F-479D-B445-94E8A9B83AD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2418BE13-29E0-4D1F-AC12-20C5C0D2B79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2418BE13-29E0-4D1F-AC12-20C5C0D2B79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2418BE13-29E0-4D1F-AC12-20C5C0D2B79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2418BE13-29E0-4D1F-AC12-20C5C0D2B79A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C132CDA8-154B-4CF6-BFB0-132E7EA2D8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C132CDA8-154B-4CF6-BFB0-132E7EA2D8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C132CDA8-154B-4CF6-BFB0-132E7EA2D8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C132CDA8-154B-4CF6-BFB0-132E7EA2D8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7C517E-020F-479D-B445-94E8A9B83AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7C517E-020F-479D-B445-94E8A9B83AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7C517E-020F-479D-B445-94E8A9B83AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7C517E-020F-479D-B445-94E8A9B83AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
